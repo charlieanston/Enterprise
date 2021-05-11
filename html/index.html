@@ -23,7 +23,7 @@
                 <li><a href="/html/about.html">About Us</a></li>
                 <li><a href="/html/menu.html">Menu</a></li>
                 <li><a href="/html/location.html">Locations</a></li>
-                <li><a href="/html/reserve.html">Book a Table</a></li>
+                <li><a id="reserveLink">Book a Table</a></li>
                 <li><a href="/html/delivery.html">Delivery</a></li>
             </ul>
         </div>
@@ -72,5 +72,40 @@
             <li><a href="delivery.html">Art</a></li>
         </ul>
     </div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form class="reserve">
+        <h1 style="margin-top: 5px;">Book a table</h1>
+        <input type="text" placeholder="Name*" name="name" id="name" class="inputField">
+        <input type="email" placeholder="Email*" name="email" id="email" class="inputField"><br>
+        <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField">
+        <input type="date" name="date" id="date" class="inputField"><br>
+        <input type="time" name="time" id="time" min="07:30" max="20:00" required class="inputField">
+        <select name="person" id="person" class="inputField selectBox">
+            <option value="1person">1 person.</option>
+            <option value="2persons">2 persons.</option>
+            <option value="3persons">3 persons.</option>
+            <option value="4persons">4 persons.</option>
+            <option value="5persons">5 persons.</option>
+            <option value="6persons">6 persons.</option>
+        </select><br>
+        <select name="location" id="location" class="inputField" style="width: 615px;">
+            <option value="evoLe">Evo Le Thanh Ton.</option>
+            <option value="evoDong">Evo Dong Khoi.</option>
+            <option value="evoThao">Evo Thao Dien.</option>
+        </select>
+        <div class="btn-box">
+            <button class="button">Submit.</button>
+        </div>
+    </form>
+    </div>
+  
+  </div>
+
 </body>
 </html>
