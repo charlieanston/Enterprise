@@ -13,44 +13,47 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-// Reserve Modal
-// Get the modal
-var modalReserve = document.getElementById("reserveModal");
-// Get the button that opens the modal
-var btnReserve = document.getElementById("reserveLink");
-// Get the <span> element that closes the modal
-var spanReserve = document.getElementById("reserveClose");
-// When the user clicks on the button, open the modal
-btnReserve.onclick = function() {
-  modalReserve.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-spanReserve.onclick = function() {
-  modalReserve.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalReserve) {
-    modalReserve.style.display = "none";
-  }
-}
+// Modal design
+var modalReserve = document.getElementById("reserveModal"); // Reserve Modal
+var modalSignin = document.getElementById("signinModal"); // Sign In Modal
+var modalSignup = document.getElementById("signupModal"); // Sign Up Modal
 
-// Sign In Modal
-var modalSignin = document.getElementById("signinModal");
+
+// Modal button
+var btnReserve = document.getElementById("reserveLink"); // Get the button that opens the modal
 var btnSignin = document.getElementById("signinLink");
-// Get the <span> element that closes the modal
+var btnSignup = document.getElementById("signupLink");
+
+// Modal span
+var spanReserve = document.getElementById("reserveClose"); // Get the <span> element that closes the modal
 var spanSignin = document.getElementById("signinClose");
+var spanSignup = document.getElementById("signupClose");
+
 // When the user clicks on the button, open the modal
-btnSignin.onclick = function() {
-  modalSignin.style.display = "block";
+btnReserve.onclick = function() { // Opens reserve
+  modalReserve.style.display = "block";
+  modalSignin.style.display = "none";
+  modalSignup.style.display = "none";
 }
-// When the user clicks on <span> (x), close the modal
-spanSignin.onclick = function() {
+btnSignin.onclick = function() { // Opens sign in
+  modalSignin.style.display = "block";
+  modalReserve.style.display = "none";
+  modalSignup.style.display = "none";
+}
+btnSignup.onclick = function() { // Opens sign in
+  modalSignup.style.display = "block";
+  modalReserve.style.display = "none";
   modalSignin.style.display = "none";
 }
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalSignin) {
-    modalSignin.style.display = "none";
-  }
+
+// When the user clicks on <span> (x), close the modal
+spanReserve.onclick = function() { // Closes reserve
+  modalReserve.style.display = "none";
 }
+spanSignin.onclick = function() { // Closes sign in
+  modalSignin.style.display = "none";
+}
+spanSignup.onclick = function() { // Closes sign in
+  modalSignup.style.display = "none";
+}
+

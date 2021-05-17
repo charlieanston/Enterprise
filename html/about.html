@@ -22,8 +22,8 @@
                 <li><a href="/html/about.html">About Us</a></li>
                 <li><a href="/html/menu.html">Menu</a></li>
                 <li><a href="/html/location.html">Locations</a></li>
-                <li><a href="/html/reserve.html">Book a Table</a></li>
-                <li><a href="/html/delivery.html">Delivery</a></li>
+                <li><a id="reserveLink">Book a Table</a></li>
+                <li><a id="signinLink">Delivery</a></li>
             </ul>
         </div>
     </div>
@@ -98,8 +98,28 @@
                 <h1 style="margin-top: 5px;">Sign In</h1>
                 <input type="text" placeholder="Username*" name="username" id="username" class="inputField"><br>
                 <input type="password" placeholder="Password*" name="password" id="password" class="inputField"><br>
+                <li><a id="signupLink">Sign up.</a></li><br>
                 <div class="btn-box">
                     <button class="button">Sign In.</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="signupClose">&times;</span>
+            <form class="reserve">
+                <h1 style="margin-top: 5px;">Sign Up</h1>
+                <input type="text" placeholder="Name*" name="name" id="name" class="inputField">
+                <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField"><br>
+                <input type="email" placeholder="Email*" name="email" id="email" class="inputField" style="width: 615px;"><br>
+                <input type="text" placeholder="Username*" name="username" id="username" class="inputField">
+                <input type="password" placeholder="Password*" name="password" id="password" class="inputField"><br>
+                <div class="btn-box">
+                    <button class="button">Sign Up.</button>
                 </div>
             </form>
         </div>

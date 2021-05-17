@@ -280,3 +280,21 @@ h2{
 .reserve{
     text-align: center;
 }
+
+/* Sign Up */
+.reserve li{
+    list-style: none;
+    color: #1C2C59;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.reserve li a{
+    text-decoration: none;
+    color: #1C2C59;
+}
+.reserve li a:hover{
+    color: grey;
+    transition: all ease-in-out 300ms;
+}
