@@ -28,26 +28,35 @@
         </div>
     </div>
 
-   <!-- About Us -->
     <div class="banner">
         <img src="/img/Interior.jpg">
     </div>
-    <div class="welcome">
-        <h1 style="margin: 0;">About Us</h1>
-        <p class="welcomeP">
-            We are extremely inspired by the local cuisines, their aromatic fragrance, their savory taste.
-            That's why we decided to infuse the local ingredients and spices into the dishes, in order to revolutionize
-            Western cuisines.
-        </p>
-        <h2>Create a lasting experience.</h2>
-        <h2>Evokes curiosity.</h2>
-        <h2>Redefine cooking.</h2>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="signupClose">&times;</span>
+            <form class="reserve">
+                <h1 style="margin-top: 5px;">Sign Up</h1>
+                <input type="text" placeholder="Name*" name="name" id="name" class="inputField">
+                <input type="text" placeholder="LastName*" name="lastName" id="lastName" class="inputField"><br>
+                <input type="email" placeholder="Email*" name="email" id="email" class="inputField" style="width: 615px;"><br>
+                <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField">
+                <input type="password" placeholder="Password*" name="password" id="password" class="inputField"><br>
+                <div class="btn-box">
+                    <button class="button">Sign Up.</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="banner">
         <img src="/img/Interior3.jpg">
     </div>
 
+    <script src="/function.js"></script> 
+    <!-- Footer -->
     <div class="footer">
         <ul>
             <li><a href="menu.html">Contact</a></li>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- JS file -->
+    <script src="/function.js" defer></script> 
+
+    <title>Evo Eatery</title>
+    <link rel="icon" href="/img/e.png" type="image/icon type">
+</head>
+<body>
+    <div class="container">
+        <div class="navBar">
+            <ul>
+                <li class="logo"><a href="/html/index.html"><img src="/img/Evo.png"></a></li>
+                <li><a href="/html/about.html">About Us</a></li>
+                <li><a href="/html/menu.html">Menu</a></li>
+                <li><a href="/html/location.html">Locations</a></li>
+                <li><a href="/html/reserveForm.html">Book a Table</a></li>
+                <li><a href="/html/signInForm.html">Sign In</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="/img/Interior.jpg">
+    </div>
+
+    <!-- Reserve Modal -->
+    <div class="modal">
+        <!-- Modal content -->
+        <form class="reserve">
+            <h1 style="margin-top: 5px;">Book a table</h1>
+            <input type="text" placeholder="Name*" name="name" id="name" class="inputField">
+            <input type="email" placeholder="Email*" name="email" id="email" class="inputField"><br>
+            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField">
+            <input type="date" name="date" id="date" class="inputField"><br>
+            <input type="time" name="time" id="time" min="07:30" max="20:00" required class="inputField">
+            <select name="person" id="person" class="inputField selectBox">
+                <option value="1person">1 person.</option>
+                <option value="2persons">2 persons.</option>
+                <option value="3persons">3 persons.</option>
+                <option value="4persons">4 persons.</option>
+                <option value="5persons">5 persons.</option>
+                <option value="6persons">6 persons.</option>
+            </select><br>
+            <select name="location" id="location" class="inputField" style="width: 615px;">
+                <option value="evoLe">Evo Le Thanh Ton.</option>
+                <option value="evoDong">Evo Dong Khoi.</option>
+                <option value="evoThao">Evo Thao Dien.</option>
+            </select>
+            <div class="btn-box">
+                <button class="button">Submit.</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="banner">
+        <img src="/img/Interior3.jpg">
+    </div>
+
+    <script src="/function.js"></script> 
+    <!-- Footer -->
+    <div class="footer">
+        <ul>
+            <li><a href="menu.html">Contact</a></li>
+            <li><a href="locations.html">Jobs</a></li>
+            <li><a href="book.html">Safety</a></li>
+            <li><a href="delivery.html">Art</a></li>
+        </ul>
+    </div>
+</body>
+</html>
