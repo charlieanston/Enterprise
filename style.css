@@ -322,3 +322,32 @@ h2{
     justify-content: center;
     margin-left: 290px;
 }
+
+.menu h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 113px;
+    margin-top: -80px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.column {
+    width: 33.33%;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
