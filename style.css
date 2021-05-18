@@ -304,14 +304,21 @@ h2{
 }
 
 .search{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin-top: 175px;
-}
-.search .inputField{
-    width:600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 160px;
+}
+
+.search .inputField{
+    align-items: center;
+    justify-content: center;
+    margin-left: 75px;
+    width: 600px;
+}
+
+.search button{
+    align-items: center;
+    justify-content: center;
+    margin-left: 290px;
 }
