@@ -1,6 +1,4 @@
 var slideIndex = 0;
-showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -13,11 +11,12 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
+
+
 // Modal design
 var modalReserve = document.getElementById("reserveModal"); // Reserve Modal
 var modalSignin = document.getElementById("signinModal"); // Sign In Modal
 var modalSignup = document.getElementById("signupModal"); // Sign Up Modal
-
 
 // Modal button
 var btnReserve = document.getElementById("reserveLink"); // Get the button that opens the modal
@@ -57,3 +56,58 @@ spanSignup.onclick = function() { // Closes sign in
   modalSignup.style.display = "none";
 }
 
+function slideCont () {
+  let slideContent = document.getElementById("slideContent");
+  slideContent.innerHTML = '';
+  slideContent.innerHTML += `
+  <div id="slideshow-container">
+    <div class="mySlides fade">
+      <img src="/img/Breakfast/Belgian-Waffles.jpg" class="slide">
+      <div class="text"><h2>[Innovate.]</h2></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/img/Lunch/Chunky-Chicken-Salad-with-Grapes-and-Pecans.jpg" class="slide">
+      <div class="text"><h2>[Redesign.]</h2></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/img/Dinner/Beef-Pot-Roast.jpg" class="slide">
+      <div class="text"><h2>[Evolve.]</h2></div>
+    </div>
+  </div>
+  <div class="welcome">
+    <h1>Our Story</h1>
+    <p class="welcomeP">
+      Evo Eatery reimagines the wonders of Western culinary, showing the future of Western dishes.
+      Our eatery strives to evoke the curiosity long forgotten by most people, through culinary means.
+    </p>
+    <p class="welcomeP">
+      We are native to Vietnam, but our passion for the learning of cuisines all over the world has lead us
+      to a revolution, an evolution in culinary science, in pursuit of extraordinary taste.
+    </p>
+  </div>
+  <div class="banner">
+    <img src="/img/Banner.jpg">
+  </div>`;
+}
+slideCont();
+
+// function navCont () {
+//   let naviContent = document.getElementById("naviContent");
+//   naviContent.innerHTML = '';
+//   naviContent.innerHTML += `
+//   <div class="container">
+//       <div class="navBar">
+//           <ul>
+//               <li class="logo"><a href="/html/index.html"><img src="/img/Evo.png"></a></li>
+//               <li><a href="/html/about.html">About Us</a></li>
+//               <li><a href="/html/menu.html">Menu</a></li>
+//               <li><a href="/html/location.html">Locations</a></li>
+//               <li><a id="reserveLink">Book a Table</a></li>
+//               <li><a id="signinLink">Delivery</a></li>
+//           </ul>
+//       </div>
+//   </div>`;
+// }
+// navCont();

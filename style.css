@@ -59,9 +59,9 @@ h2{
     max-width: 1000px;
 }
 .slide{
-    width: 1000px;
+    width: 75%;
     height: 300px;
-    margin-top: 100px;
+    margin: 100px 0 0 157px;
     opacity: .7;
     border-radius: 20px;
     object-fit: cover;
@@ -75,7 +75,7 @@ h2{
 /* Caption text */
 .text {
     position: absolute;
-    top: 50%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
@@ -222,6 +222,7 @@ h2{
     padding: 10px;
     margin: 5px;
     border: 2px solid #1C2C59;
+    background-color:ivory;
 }
 .button{
     width: 150px;
@@ -230,8 +231,10 @@ h2{
     margin: 5px;
     align-items: center;
     justify-content: center;
-    border: 2px solid #1C2C59;
-    background-color: white;
+    color: whitesmoke;
+    background-color: #1C2C59;
+    border: none;
+    border-radius: 25px;
 }
 .button:hover{
     cursor: pointer;
@@ -240,8 +243,9 @@ h2{
     padding: 10px;
     margin: 5px;
     border: 2px solid #1C2C59;
-    background-color: #1C2C59;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #1C2C59;
+    border-radius: 25px;
 }
 
 /* The Modal (background) */
@@ -297,4 +301,17 @@ h2{
 .reserve li a:hover{
     color: grey;
     transition: all ease-in-out 300ms;
+}
+
+.search{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 175px;
+}
+.search .inputField{
+    width:600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
