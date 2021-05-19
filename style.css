@@ -217,14 +217,15 @@ h2{
 .inputField{
     -webkit-appearance: none;
     min-height: calc(0.9em + (0.8em * 2) + 0.6em);
-    width: 300px;
+    width: 615px;
     height: 45px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border: 1px solid #1C2C59;
     background-color: #e6dddd60;
     border-radius: 5px;
     font-weight: 600;
+    font-size: 12px;
     transition: background 0.25s, border-color 0.25s, color 0.25s;
 }
 .inputField:focus{
