@@ -1,44 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Sidebar Dashboard Template</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
-      <div class="left_area">
-        <h3>Coding <span>Snow</span></h3>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- JS file -->
+    <script src="/function.js" defer></script> 
+
+    <title>Evo Eatery</title>
+    <link rel="icon" href="/img/e.png" type="image/icon type">
+</head>
+<body onload="showSlides();">
+    <!-- Navbar -->
+    <!-- <div id="naviContent"></div> -->
+
+    <div class="container">
+      <div class="navBar">
+          <ul>
+              <li class="logo"><a href=""><img src="/img/Evo.png"></a></li>
+              <li><a href="/html/user.html">Order Food</a></li>
+              <li><a href="/html/cart.html">Check Cart</a></li>
+              <li><a href="/html/index.html">Log Out</a></li>
+          </ul>
       </div>
-      <div class="right_area">
-        <a href="#" class="logout_btn">Logout</a>
-      </div>
-    </header>
-    <!--header area end-->
-    <!--sidebar start-->
-    <div class="sidebar">
-      <div>
-        <img src="1.png" class="profile_image" alt="">
-        <h4>Jessica</h4>
-      </div>
-      <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
-      <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
-      <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
-      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-      <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+  </div>
+
+    <!-- Cart Items -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="/img/Appetiser/Easy-Smoked-Salmon.jpg">
+                      <div>
+                        <p>Smoked salmon</p>
+                        <small>Price: $20</small><br>
+                        <a href="">Remove.</a>
+                      </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$20</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td>$2</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$22</td>
+            </tr>
+          </table>
+        </div>
     </div>
-    <!--sidebar end-->
 
-    <div class="content"></div>
-
-  </body>
+    <script src="/function.js"></script> 
+</body>
 </html>
-      
