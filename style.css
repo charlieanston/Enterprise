@@ -249,7 +249,7 @@ h2{
     color: #1C2C59;
 }
 
-.button{
+button{
     width: 150px;
     height: 45px;
     padding: 10px;
@@ -261,7 +261,7 @@ h2{
     border: none;
     border-radius: 25px;
 }
-.button:hover{
+button:hover{
     cursor: pointer;
     width: 150px;
     height: 45px;
@@ -414,6 +414,11 @@ table{
 .cart-info{
     display: flex;
     flex-wrap: wrap;
+}
+.cart-info button{
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
 }
 .cart-info img{
     width: 80px;
