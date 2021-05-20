@@ -36,16 +36,16 @@
     <div class="modal">
         <!-- Modal content -->
         <form class="reserve">
-            <h1 style="margin-top: 5px;">Book a table</h1>
-            <input type="text" placeholder="Name*" name="name" id="name" class="inputField"><br>
-            <input type="email" placeholder="Email*" name="email" id="email" class="inputField"><br>
-            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField"><br>
-            <select name="reason" id="reason" class="inputField selectBox">
+            <h1 style="margin-top: 5px;">Contact Us.</h1>
+            <input type="text" placeholder="Name*" name="name" id="name" class="inputField" required><br>
+            <input type="email" placeholder="Email*" name="email" id="email" class="inputField" required><br>
+            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField" required><br>
+            <select name="reason" id="reason" class="inputField selectBox" required>
                 <option value="" disabled selected="selected">Reason for inquiry*</option>
                 <option value="general">General inquiry.</option>
                 <option value="press">Press inquiry.</option>
             </select><br>
-            <textarea name="message" id="message" class="inputField" placeholder="Your message*" style="resize: vertical"></textarea>
+            <textarea name="message" id="message" class="inputField" placeholder="Your message*" style="resize: vertical" required></textarea>
             <div class="btn-box">
                 <button class="button">Submit.</button>
             </div>

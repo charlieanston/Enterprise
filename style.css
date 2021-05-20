@@ -380,3 +380,11 @@ h2{
     color: #1C2C59;
     border-radius: 25px;
 }
+
+input:focus:invalid {
+    border: 2px  solid red;
+}
+
+input:focus:valid {
+    border: 2px  solid green;
+}

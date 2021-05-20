@@ -37,13 +37,11 @@
         <!-- Modal content -->
         <form class="reserve">
             <h1 style="margin-top: 5px;">Book a table</h1>
-            <input type="text" placeholder="Name*" name="name" id="name" class="inputField"><br>
-            <input type="email" placeholder="Email*" name="email" id="email" class="inputField"><br>
-            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField"><br>
-            <!-- <input type="date" name="date" id="date" class="inputField"style="width: 295px;"> -->
-            <input type="text" placeholder="Select a date*" onfocus="(this.type='date')" onblur="(this.type='text')"name="date" id="date" class="inputField" style="width: 295px;">
+            <input type="text" placeholder="Name*" name="name" id="name" class="inputField" required><br>
+            <input type="email" placeholder="Email*" name="email" id="email" class="inputField" required><br>
+            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField" required><br>
+            <input type="text" placeholder="Select a date*" onfocus="(this.type='date')" onblur="(this.type='text')"name="date" id="date" class="inputField" style="width: 295px;" required>
             <input type="text" placeholder="Select a time* (hr:min AM/PM)" onfocus="(this.type='time')" onblur="(this.type='text')"name="time" id="time" class="inputField" style="width: 295px;" required><br>
-            <!-- <input type="time" name="time" id="time" min="07:30" max="20:00" required class="inputField"style="width: 300px;"><br> -->
             <select name="person" id="person" class="inputField selectBox" required>
                 <option value="" disabled selected="selected">Number of people*</option>
                 <option value="1person">1 person.</option>
@@ -53,7 +51,7 @@
                 <option value="5persons">5 persons.</option>
                 <option value="6persons">6 persons.</option>
             </select><br>
-            <select name="location" id="location" class="inputField" style="width: 615px;">
+            <select name="location" id="location" class="inputField" style="width: 615px;" required>
                 <option value="" disabled selected="selected">Location*</option>
                 <option value="evoLe">Evo Le Thanh Ton.</option>
                 <option value="evoDong">Evo Dong Khoi.</option>

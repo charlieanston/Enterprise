@@ -37,10 +37,10 @@
         <!-- Modal content -->
         <form class="reserve">
             <h1 style="margin-top: 5px;">Book a table</h1>
-            <input type="text" placeholder="Name*" name="name" id="name" class="inputField"><br>
-            <input type="email" placeholder="Email*" name="email" id="email" class="inputField"><br>
-            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField"><br>
-            <select name="job" id="job" class="inputField selectBox">
+            <input type="text" placeholder="Name*" name="name" id="name" class="inputField" required><br>
+            <input type="email" placeholder="Email*" name="email" id="email" class="inputField" required><br>
+            <input type="tel" placeholder="Phone*" name="phone" id="phone" class="inputField" required><br>
+            <select name="job" id="job" class="inputField selectBox" required>
                 <option value="" disabled selected="selected">Position seeking*</option>
                 <option value="server">Server.</option>
                 <option value="bartender">Bartender.</option>
@@ -49,7 +49,7 @@
                 <option value="dishwasher">Dishwasher.</option>
                 <option value="manager">Manager.</option>
             </select><br>
-            <textarea name="cover" id="cover" class="inputField" placeholder="Cover letter*" style="resize: vertical"></textarea><br>
+            <textarea name="cover" id="cover" class="inputField" placeholder="Cover letter*" style="resize: vertical" required></textarea><br>
             <label for="file">Resume</label>
             <input type="file" name="file" id="file">
             <div class="btn-box">
