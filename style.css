@@ -239,7 +239,7 @@ h2{
     width: 150px;
     height: 45px;
     padding: 10px;
-    margin: 20px;
+    margin: 5px;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
@@ -318,24 +318,65 @@ h2{
 }
 
 .menu img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 113px;
+    display: block;
     margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.menu p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.menu .welcomeP{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.menu .add{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 .column {
     width: 33.33%;
-  }
+}
   
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
+    display: flex;
     clear: both;
 }
 
+.add{
+    padding: 2px;
+    height:30px;
+    width:75px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #1C2C59;
+    border: none;
+    border-radius: 25px;
+}
+.add:hover{
+    cursor: pointer;
+    padding: 2px;
+    height:30px;
+    width:75px;
+    margin: 5px;
+    border: 1px solid #1C2C59;
+    background-color: whitesmoke;
+    color: #1C2C59;
+    border-radius: 25px;
+}
