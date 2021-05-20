@@ -32,6 +32,8 @@
 
 
 h1{
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
     padding: 20px;
     font-size: 80px;
@@ -107,6 +109,7 @@ h2{
     z-index: 100;
     background: #1C2C59;
     position: fixed;
+    box-shadow: 0 4px 2px -2px gray;
 }
 .navBar ul{
     display: inline-flex;
@@ -301,6 +304,8 @@ h2{
 .search .inputField{
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-left: 75px;
     width: 600px;
 }
