@@ -111,3 +111,22 @@ function slideCont () {
   </div>`;
 }
 slideCont();
+
+// Side nav design
+let menuButton = document.getElementById("menuButton");
+let sideNav = document.getElementById("sideNav");
+
+sideNav.style.right = "-250px";
+menuButton.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0px";
+    }
+    else{
+        sideNav.style.right = "-250px";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]',{
+    speed: 1000,
+    speedAsDuration: true
+});
